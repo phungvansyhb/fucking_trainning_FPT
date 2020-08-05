@@ -1,0 +1,89 @@
+/* font for page */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+.error {
+    font-size: 18px;
+    font-weight: 600;
+    color: red;
+}
+.label-register {
+    width: 100%;
+    color: #000;
+    font-size: 18px;
+    font-weight: 1000;
+    text-align: center;
+    border: 0px solid;
+}
+/* style for p element */
+.label-register p {
+    height: 30px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+/* style for div with class 'center' */
+.wrapper {
+    width: 90%;
+    margin: auto;
+}
+/* style for div class 'div-register' */
+.div-register .table#tbl-register {
+    width: 100%;
+    margin: 0px auto;
+}
+table#tbl-register,
+th,
+td {
+    padding: 5px;
+}
+.table#tbl-register td:nth-child(odd) {
+    text-align: right;
+    width: 25%;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 6px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5;
+}
+button {
+    background-color: #0073e6;
+    border: 0;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.label-result {
+    text-align: left;
+    font-weight: 1000;
+}
+.div-result {
+    width: 100%;
+    margin: 0px auto;
+}
+table.tbl-result {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: auto;
+}
+table .tbl-result thead {
+    background-color: #ccc;
+}
+table.tbl-result th,
+table.tbl-result td {
+    padding: 5px;
+    text-align: center;
+}
+span {
+    color: red;
+}
+#error {
+    text-align: center;
+    color: red;
+}

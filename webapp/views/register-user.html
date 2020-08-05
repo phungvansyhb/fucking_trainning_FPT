@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>register-user</title>
+        <link rel="stylesheet" href="../css/register-user.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="label-register">
+                <p>USER REGISTER</p>
+            </div>
+            <p class="error" id="msg"></p>
+            <div class="div-register">
+                <form action="#" method="post" name="frm-register">
+                    <table id="tbl-register">
+                        <tr>
+                            <td>First name <span>*</span></td>
+                            <td>
+                                <input
+                                    type="text"
+                                    name="firstname"
+                                    id="firstname"
+                                    placeholder="Enter first name"
+                                    class="firstname"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Last Name <span>*</span></td>
+                            <td>
+                                <input
+                                    type="text"
+                                    name="lastname"
+                                    id="lastname"
+                                    class="lastname"
+                                    placeholder="Enter last name"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Email <span>*</span></td>
+                            <td>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    class="lastname"
+                                    placeholder="Enter email"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>User name <span>*</span></td>
+                            <td>
+                                <input
+                                    type="text"
+                                    name="userName"
+                                    id="userName"
+                                    class="userName"
+                                    placeholder="Enter username"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pass word <span>*</span></td>
+                            <td>
+                                <input
+                                    type="password"
+                                    name="password"
+                                    id="password"
+                                    class="password"
+                                    placeholder="Enter password"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Confirm password <span>*</span></td>
+                            <td>
+                                <input
+                                    type="password"
+                                    name="cfpassword"
+                                    id="cfpassword"
+                                    class="cfpassword"
+                                    placeholder="Enter confirm password"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <button
+                                    type="button"
+                                    name="register"
+                                    onclick="renderResult(validate(getUser()) , getUser())"
+                                >
+                                    Register
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <hr />
+            <p class="label-result">User List</p>
+            <div class="div-result">
+                <table class="tbl-result" id="tbl-result" border="1">
+                    <thead id="header"></thead>
+                    <tbody id="body"></tbody>
+                </table>
+            </div>
+        </div>
+        <script src="../js/app.js"></script>
+    </body>
+</html>
