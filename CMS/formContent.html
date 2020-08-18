@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Add Content</title>
+        <link rel="stylesheet" href="editProfile.css" />
+    </head>
+    <body>
+        <!-- header -->
+        <div class="edit-header">
+            <span>
+                CMS
+            </span>
+            <span>
+                icon here
+            </span>
+        </div>
+        <!-- end header -->
+
+        <div class="edit-wrap">
+            <!-- sidebar -->
+            <div class="edit-sidebar">
+                <div class="search-area">
+                    <input
+                        type="search"
+                        name="search"
+                        placeholder="Search..."
+                    />
+
+                    <div class="search-icon">
+                        <i class="fas fa-search" style="font-size: 18px;"></i>
+                    </div>
+                </div>
+
+                <div class="list-menu">
+                    <div class="list-menu-item view-content"><a href="viewContent.html">View Content</a></div>
+                    <div class="list-menu-item form-content"><a href="formContent.html">Form Content</a></div>
+                </div>
+            </div>
+            <!-- end sidebar -->
+            <!-- content form -->
+            <div class="edit-content">
+                <div class="content-header">
+                    <h1>Add Content</h1>
+                    <div class="content-container">
+                        <div class="container-header">Content form element</div>
+                        <form
+                            action="#"
+                            class="content-form"
+                            name="add-content-form"
+                        >
+                            <div><strong class="label">Title</strong></div>
+                            <input
+                                type="text"
+                                placeholder="Enter the title"
+                                name="title"
+                            />
+                            <div><strong class="label">Bref</strong></div>
+                            <textarea name="bref" id="" rows="7"></textarea>
+
+                            <div><strong class="label">Content</strong></div>
+                            <textarea name="content" id="" rows="7"></textarea>
+                            <div class="input-button-group">
+                                <input
+                                    type="button"
+                                    name="submit"
+                                    value="Submit Button"
+                                />
+                                <input
+                                    type="reset"
+                                    name="reset"
+                                    value="Reset Button"
+                                />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- end content -->
+        </div>
+        <script
+            src="https://kit.fontawesome.com/2860d4788d.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

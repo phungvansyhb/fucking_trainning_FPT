@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --font-size-title: 26px;
+    --font-size-icon: 60px;
+    --font-size-icon-small: 35px;
+}
+.wrap-header-article {
+    background: url("/images/1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+}
+.wrap-footer-article {
+    background: url("/images/1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 250px;
+}
+.title-icon {
+    font-size: var(--font-size-title);
+}
+.icon-jumbotron > i {
+    font-size: var(--font-size-icon);
+}
+
+/* css for reverse img area */
+.intro-img,
+.intro-text {
+    height: 300px;
+    min-height: 300px;
+}
+.title-intro {
+    font-size: var(--font-size-title);
+}
+.intro-phone {
+    background: url("./images/2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.intro-code {
+    background: url("./images/3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.intro-lego {
+    background: url("./images/4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* css for avatar area */
+
+.author-intro-text {
+    margin-top: 80px;
+}
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.avatar-1 {
+    background: url("./images/5.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.avatar-2 {
+    background: url("./images/6.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.avatar-3 {
+    background: url("./images/7.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* css for bottom */
+.icon-bottom {
+    font-size: var(--font-size-icon-small);
+    margin: 10px;
+}
+
+.list-contact div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+@media screen and (max-width: 1200px) {
+    .text-own {
+        text-align: center;
+    }
+    .list-contact {
+        justify-content: center;
+    }
+    .icon-bottom {
+        margin: 15px;
+    }
+}
+.first {
+    list-style-type: none !important;
+    margin-left: 0px;
+}
+.bottom a {
+    text-decoration: none;
+    color: #3551be;
+}

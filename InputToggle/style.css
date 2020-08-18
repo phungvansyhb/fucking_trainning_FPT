@@ -1,0 +1,122 @@
+:root {
+    --done-color: rgba(0, 255, 28, 0.25);
+    --not-done-color: rgba(5, 165, 206, 0.25);
+}
+
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    line-height: 2rem;
+    color: #000000;
+}
+
+.wrap {
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    border: 1.5px solid black;
+    min-height: 100vh;
+}
+.header-intro-bold {
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* ----------------------css for form insert --------------------- */
+.body-input-text {
+    width: 65%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px;
+}
+@media screen and (max-width: 600px) {
+    .body-input-text {
+        width: 100%;
+    }
+}
+.body-input-text input[type="text"] {
+    height: 40px;
+    width: 85%;
+    border: 0.5px solid gray;
+    border-radius: 2px;
+    font-size: 18px;
+    color: black;
+    padding-left: 8px;
+}
+button[type="submit"] {
+    border: 2px solid #00b4ff;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+button[type="submit"]:focus {
+    outline: none;
+}
+.submit i {
+    color: #00b4ff;
+    font-size: 25px;
+}
+.message-error {
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+    display: none;
+}
+/* --------------css for list result ---------------- */
+.result-todo-list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 35%;
+    justify-content: center;
+}
+.todo-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    border: 1px solid blue;
+    background-color: var(--not-done-color);
+    padding-left: 15px;
+    padding-right: 10px;
+    border-radius: 2px;
+    transition: 1s;
+}
+@media screen and (max-width: 600px) {
+    .result-todo-list {
+        width: 100%;
+        margin-left: 0%;
+        padding: 8px;
+    }
+    .todo-item {
+        width: 100%;
+    }
+}
+.todo-item > i {
+    display: none;
+    margin-top: 5px;
+    font-size: 20px;
+    transition: 1s;
+}
+.todo-item span {
+    display: inline-block;
+    width: 90%;
+    text-align: left;
+}
+.todo-item:hover i[class="fa fa-times"] {
+    display: block;
+}
+
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+.done {
+    background-color: var(--done-color);
+    border: 1.5px solid green;
+}

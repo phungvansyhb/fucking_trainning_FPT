@@ -1,0 +1,34 @@
+.wrap {
+    margin-left: 200px;
+    width: 400px;
+    height: 200px;
+    border: 6px solid red;
+}
+
+.xanh {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    /* margin: 20px; */
+    background-color: green;
+    border: 4px solid black;
+}
+.test {
+    background-color: yellow;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    /* vertical-align: middle; */
+}
+.text {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    margin: auto;
+}
+.demo2 {
+    display: inline;
+    word-spacing: 100px;
+}

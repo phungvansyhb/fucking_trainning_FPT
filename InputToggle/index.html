@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Toggle Todo List</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="header-intro-bold">To-Do List</div>
+            <div class="header-intro-thin">
+                <pre>Enter text onto field to add items to your list</pre>
+                <pre>Click "X" to remove the item from your list</pre>
+                <pre>Click the item to mark is as complete</pre>
+            </div>
+            <div class="body-input-text">
+                <form name="form" id="form" onsubmit="getValue()">
+                    <input
+                        type="text"
+                        name="todo"
+                        id="todo"
+                        placeholder="input to do"
+                    />
+                    <button type="submit" class="submit">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                </form>
+                <div class="message-error">Please fill full!</div>
+            </div>
+            <div class="result-todo-list" onclick="handleClick(event)">
+                <div class="todo-item">
+                    <span>todo1</span>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>

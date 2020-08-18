@@ -1,0 +1,92 @@
+:root {
+    font-family: sans-serif;
+    --main-theme: #80808026;
+    --second-them: #fff;
+    --font-size-header: 20px;
+    --font-size-normal: 16px;
+    --padding: 15px;
+    --border-color: #0000111c;
+    --border-input-color: #00001140;
+}
+/* css for header */
+.edit-header {
+    background-color: var(--main-theme);
+    padding: var(--padding);
+    display: flex;
+    justify-content: space-between;
+}
+.edit-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.edit-wrap .edit-sidebar {
+    width: 17%;
+    min-height: 100vh;
+    background-color: var(--main-theme);
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+}
+/* css for left side */
+
+.search-area {
+    padding: var(--padding);
+    display: flex;
+}
+
+.search-area input {
+    height: 40px;
+    width: 100%;
+    border: 1px solid var(--border-input-color);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 5px;
+    font-size: 16px;
+}
+.search-icon {
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7px;
+    border: 1px solid var(--border-input-color);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.list-menu-item {
+    padding: var(--padding);
+    border-top: 0.5px solid var(--border-color);
+    border-bottom: 0.5px solid var(--border-color);
+}
+.list-menu-item a {
+    color: steelblue;
+    text-decoration: none;
+}
+/* css for main content form */
+.edit-content {
+    width: 100%;
+    padding: var(--padding);
+}
+.edit-content .content-container {
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.content-container .container-header {
+    background-color: var(--main-theme);
+    padding: var(--padding);
+}
+.content-container table {
+    width: 100%;
+    padding: var(--padding);
+    border-spacing: 0px;
+}
+/* .content-container table thead td {
+    padding: 5px;
+} */
+.content-container table,
+tr,
+td,
+th {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+}
