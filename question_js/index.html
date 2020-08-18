@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>List Question</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <div class="wrap" id="wrap">
+            <div class="header-text-bold">Online javascript Test</div>
+            <div class="body-question-border">
+                <div id="question">Js is ...?</div>
+                <form id="form">
+                    <label class="container" id="option1">
+                        <span>One</span>
+                        <input type="checkbox" value="1" class="option" />
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container" id="option2"
+                        ><span>One</span>
+                        <input type="checkbox" value="2" class="option" />
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container" id="option3"
+                        ><span>One</span>
+                        <input type="checkbox" value="3" class="option" />
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container" id="option4"
+                        ><span>One</span>
+                        <input type="checkbox" value="4" class="option" />
+                        <span class="checkmark"></span>
+                    </label>
+                    <div id="msgcheck"></div>
+                </form>
+            </div>
+            <div id="action">
+                <div class="btn left-btn" id="left-btn" onclick="click()">
+                    Previous
+                </div>
+                <div class="btn right-btn" id="right-btn">Next</div>
+                <div class="btn submit-btn" id="submit-btn">Submit</div>
+            </div>
+            <div id="msg"></div>
+            <div id="result"></div>
+            <div class="action-end">
+                <i
+                    class="fa fa-undo"
+                    aria-hidden="true"
+                    id="return"
+                    title="Do again"
+                ></i>
+                <i
+                    class="fa fa-american-sign-language-interpreting"
+                    aria-hidden="true"
+                    id="check"
+                    title="Check"
+                ></i>
+            </div>
+        </div>
+
+        <script src="main.js" type="module"></script>
+    </body>
+</html>
