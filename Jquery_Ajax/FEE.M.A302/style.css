@@ -1,0 +1,14 @@
+:root {
+    --quote-font: "Arima Madurai";
+    --title-font: "Poppins";
+}
+.quote {
+    font-family: var(--quote-font);
+}
+.title,
+.author {
+    font-family: var(--title-font);
+}
+.jumbotron {
+    padding: 30px;
+}
