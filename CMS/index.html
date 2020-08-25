@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Add Content</title>
+        <link rel="stylesheet" href="editProfile.css" />
+        <link rel="stylesheet" href="viewContent.css" />
+        <!-- jquery cdn -->
+        <!-- bootstrap css cdn -->
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <!-- header -->
+        <div class="edit-header">
+            <span> <b>CMS</b> </span>
+            <span>
+                <div class="dropdown open mr-5">
+                    <i
+                        class="fa fa-user-circle dropdown-toggle"
+                        style="font-size: 22px;"
+                        id="triggerId"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    ></i>
+                    <span id="username"> </span>
+                    <div class="dropdown-menu" aria-labelledby="triggerId">
+                        <span class="dropdown-item" id="edit-form"
+                            ><i class="fa fa-pencil" aria-hidden="true"></i>
+                            <span> User Profile</span>
+                        </span>
+                        <hr />
+                        <span class="dropdown-item" href="#" id="logout"
+                            ><i class="fa fa-user-times" aria-hidden="true"></i
+                            ><span> Log out</span>
+                        </span>
+                    </div>
+                </div>
+            </span>
+        </div>
+        <!-- end header -->
+
+        <div class="edit-wrap">
+            <!-- sidebar -->
+            <div class="edit-sidebar">
+                <div class="search-area">
+                    <input
+                        type="search"
+                        name="search"
+                        placeholder="Search..."
+                    />
+
+                    <div class="search-icon">
+                        <i class="fas fa-search" style="font-size: 18px;"></i>
+                    </div>
+                </div>
+
+                <div class="list-menu">
+                    <div class="list-menu-item view-content" id="view-content">
+                        <i class="fa fa-table" aria-hidden="true"></i> View
+                        Content
+                    </div>
+                    <div class="list-menu-item form-content" id="form-content">
+                        <i class="fa fa-pencil" aria-hidden="true"></i> Form
+                        Content
+                    </div>
+                </div>
+            </div>
+            <!-- end sidebar -->
+
+            <!-- content  -->
+            <div class="loader"></div>
+            <div
+                id="content-switch"
+                style="width: 100%; position: relative;"
+            ></div>
+            <!-- content -->
+        </div>
+
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+        <script src="../formvalidate.js"></script>
+        <!-- bootstrap js cdn -->
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://kit.fontawesome.com/2860d4788d.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!-- content form -->
+<div class="edit-content">
+    <div class="content-header">
+        <h1>Edit Profile</h1>
+        <div class="content-container">
+            <div class="container-header">Profile form element</div>
+            <form
+                action="#"
+                class="content-form"
+                name="content-form"
+                id="edit-form"
+                method="GET"
+            >
+                <div><strong class="label">First Name</strong></div>
+                <input
+                    type="text"
+                    placeholder="Enter the first name"
+                    name="firstname"
+                />
+
+                <div><strong class="label">Last Name</strong></div>
+                <input
+                    type="text"
+                    placeholder="Enter the last name"
+                    name="lastname"
+                />
+                <div><strong class="label">Email</strong></div>
+                <input
+                    type="email"
+                    placeholder="Enter the email"
+                    name="email"
+                />
+                <div><strong class="label">Phone</strong></div>
+                <input
+                    type="text"
+                    placeholder="Enter the phone "
+                    name="phone"
+                />
+                <div><strong class="label">Description</strong></div>
+                
+                <textarea name="description" id="" rows="7"></textarea>
+
+                <div class="input-button-group">
+                    <input
+                        type="submit"
+                        name="submit"
+                        value="Submit Button"
+                        style="cursor: pointer;"
+                    />
+                    <input
+                        type="reset"
+                        name="reset"
+                        value="Reset Button"
+                        style="cursor: pointer;"
+                    />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- end content -->
+<script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"
+></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+<script src="../formvalidate.js"></script>

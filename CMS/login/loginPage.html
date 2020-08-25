@@ -10,7 +10,12 @@
         <div class="container">
             <div class="wrap">
                 <div class="header"><span>Please Sign In</span></div>
-                <form action="#" class="login page-form">
+                <form
+                    action="../index.html"
+                    class="login page-form"
+                    id="login-form"
+                    
+                >
                     <div>
                         <input
                             type="email"
@@ -31,20 +36,35 @@
                         <table>
                             <tr>
                                 <td>
-                                    <input type="checkbox" class="remember" name="remember" />
+                                    <input
+                                        type="checkbox"
+                                        class="remember"
+                                        name="remember"
+                                    />
                                 </td>
                                 <td><span>Remember Me</span></td>
                             </tr>
                         </table>
                     </div>
                     <div>
-                        <input type="button" class="submit" value="Login" />
+                        <input type="submit" class="submit" value="Login" />
                     </div>
                     <div class="link">
-                        <a href="#">Click here to register</a>
+                        <a href="/login/registerPage.html"
+                            >Click here to register</a
+                        >
                     </div>
                 </form>
             </div>
         </div>
+
+        <!-- jquery cdn -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+        <script src="../formvalidate.js"></script>
     </body>
 </html>
