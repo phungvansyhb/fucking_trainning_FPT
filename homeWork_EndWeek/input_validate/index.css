@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 50px 0px 0px 0px;
+    background-color: rgb(158 158 158 / 25%);
+}
+.wrap {
+    border: 0.1px solid black;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 10px rgb(212, 208, 208);
+    border-radius: 5px;
+    background-color: white;
+}
+.form-title {
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.form-subtitle {
+    margin: 10px 0px;
+    font-size: 15px;
+    color: gray;
+}
+input {
+    background-color: #8080800f !important;
+    padding-left: 10px;
+}
+select#gioitinh {
+    position: relative;
+    background-color: #8080800f !important;
+}
+.form-footertitle {
+    word-break: break-word;
+    font-size: 15px;
+    color: gray;
+}
+button.btn.btn-small {
+    margin: 15px 0px 40px 0px;
+    background-color: #03a9f4a3;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 5px 60px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px #03a9f487;
+    border: 0.1px solid #80808014;
+}
+label.error {
+    color: red;
+    font-style: italic;
+    margin-left: 19px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+/* override form-control bootsrap */
+.form-control {
+    border: 0px;
+    padding: 0.375rem 1.5rem;
+}
