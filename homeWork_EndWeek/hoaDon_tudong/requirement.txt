@@ -1,0 +1,37 @@
+ - each row auto matic cacul priceof product , and can add , subtract quantity.
+ - have button to add row , when click new row appear with empty name , 0 quantity and 0$ cost . 
+ - User can click to the cell to edit .(use attribute contenteditable)
+ - have cell display total price of all automaticlly
+
+
+
+ => solution : 
+ - use html table tag to layout , 
+ - use table selector to process: example : .rows return all <tr> , rows[i].cells return o cells in row[i]
+ - to handle cost each row need : 
+    * function handle increase : is have Maximum ,  
+    * function handle decrease : if quantity is 0 ,
+    * function cacul total of row : which method to use ? , how to update when decrease and increase 
+ - to handle add product need : 
+    * function handle add : where to add , what value default when add  
+ - to edit need : 
+    *a function handle edit : how to use editable , how to press Enter will done edit 
+    * maybe validate : how to validate : how display message error  
+ - to cacul total of all need : 
+    * function handle caculAll: how to update automatic ?
+
+=> list of name varial (will class of elm in html not id because will have many row):
+    - increaseBtn 
+    - decreaseBtn
+    - createBtn
+    - deleteBtn
+    - product : {
+        -id 
+        -name
+        -cost
+        -quantity
+    }
+    -subtotal
+    -total
+
+Note : converse HTMLcolection to array
