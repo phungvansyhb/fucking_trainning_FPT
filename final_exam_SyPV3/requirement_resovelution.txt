@@ -1,0 +1,13 @@
+1 : make form with raw html , css . don't use bootsrap ;
+    table have : 7 column
+        thead 
+        tbody 
+        tfooter : 3 row : total , discount , tax 
+2 : use Js do 
+     click btn decrease : giam quantity di 1  , min = 0 ; no more
+     click btn increase : tang quantity them 1 , no max
+     click remove : xoa hang 
+     !! quantity co the o dang NaN
+    ==> need decrese , increase , remove class va 3 function tuong ung
+    cac o tinh toan tu dong : Tax , total , total Price , total discount ===> 1 ham update de goi lai lien tuc
+3 : use jquery ==> subtitute js long else dont need

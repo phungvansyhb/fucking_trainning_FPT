@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+:root {
+    --width: 100%;
+    --height: 40px;
+    --input-margin-bot: 25px;
+    --form-padding: 30px;
+}
+.wrap-all {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    background-color: #092e72;
+    padding: 5px 20px 12px 20px;
+    text-align: center;
+    border: 1px solid;
+}
+
+input:not([type="file"]) {
+    padding-left: 10px;
+    /* margin-bottom: var(--input-margin-bot); */
+    width: var(--width);
+    height: var(--height);
+}
+select {
+    padding-left: 10px;
+    width: var(--width);
+    height: var(--height);
+    /* margin-bottom: var(--input-margin-bot); */
+}
+#countries,
+#positions {
+    color: gray;
+}
+option {
+    color: black;
+}
+.wrap-form {
+    background-color: white;
+    padding: var(--form-padding);
+}
+.title {
+    font-size: 32px;
+    color: white;
+    font-weight: 500;
+    height: 70px;
+}
+
+.name-group,
+.contact-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.name-group input,
+.contact-group input {
+    width: 48%;
+}
+textarea {
+    width: var(--width);
+    resize: none;
+    padding: 10px;
+}
+.group-btn {
+    text-align: right;
+    margin-top: 30px;
+}
+button {
+    padding: 5px 20px;
+    background-color: #ff9800;
+    border: unset;
+    height: 34px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.wrap-upload {
+    margin-top: 25px;
+    border: 0.1px solid #725d5d;
+    position: relative;
+    height: var(--height);
+}
+.place {
+    position: absolute;
+    top: 0px;
+    line-height: 40px;
+    left: 10px;
+    color: gray;
+}
+input[type="file"] {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0;
+}
+.btn-upload {
+    position: absolute;
+    top: 2.5px;
+    right: 3px;
+}
+
+.subtitle {
+    text-align: left;
+    font-size: 14px;
+    color: gray;
+    margin-top: 6px;
+}
+.errMsg {
+    color: red;
+    margin-bottom: var(--input-margin-bot);
+    margin-top: 4px;
+}
+.msgErr-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

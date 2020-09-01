@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>final_exam</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Product</td>
+                        <td>Description</td>
+                        <td>Quantity/Update</td>
+                        <td>Price</td>
+                        <td>Discount</td>
+                        <td>Tax</td>
+                        <td>Total</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="1">
+                        <td style="text-align: center">
+                            <img
+                                src="img/null_engine.png"
+                                alt="icon"
+                                width="50px"
+                                height="50px"
+                            />
+                        </td>
+                        <td>
+                            <p>Massa</p>
+                            Color:black , meterial
+                        </td>
+                        <td class="action">
+                            <span class="quantity">1</span>
+                            <span class="decrease" onclick="decrease(this)"
+                                >-</span
+                            >
+                            <span class="increase" onclick="increase(this)"
+                                >+</span
+                            >
+                            <span class="remove" onclick="remove(this)">x</span>
+                        </td>
+                        <td>$120.00</td>
+                        <td>$25.00</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="2">
+                        <td style="text-align: center">
+                            <img
+                                src="img/girl.png"
+                                alt="icon"
+                                width="50px"
+                                height="50px"
+                            />
+                        </td>
+                        <td>
+                            <p>Massa</p>
+                            Color:black , meterial
+                        </td>
+                        <td class="action">
+                            <span class="quantity">1</span>
+                            <span class="decrease" onclick="decrease(this)"
+                                >-</span
+                            >
+                            <span class="increase" onclick="increase(this)"
+                                >+</span
+                            >
+                            <span class="remove" onclick="remove(this)">x</span>
+                        </td>
+                        <td>$7.00</td>
+                        <td>--</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="3">
+                        <td style="text-align: center">
+                            <img
+                                src="img/full_engine.png"
+                                alt="icon"
+                                width="50px"
+                                height="50px"
+                            />
+                        </td>
+                        <td>
+                            <p>Massa</p>
+                            Color:black , meterial
+                        </td>
+                        <td class="action">
+                            <span class="quantity">1</span>
+                            <span class="decrease" onclick="decrease(this)"
+                                >-</span
+                            >
+                            <span class="increase" onclick="increase(this)"
+                                >+</span
+                            >
+                            <span class="remove" onclick="remove(this)">x</span>
+                        </td>
+                        <td>$120.00</td>
+                        <td>$25.00</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6" style="text-align: right">
+                            Total Price:
+                        </td>
+                        <td id="totalPrice"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" style="text-align: right">
+                            Total Discount:
+                        </td>
+                        <td id="totalDiscount"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" style="text-align: right">
+                            Total Tax:
+                        </td>
+                        <td id="totalTax"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"
+        ></script>
+        <script src="strechJquery.js"></script>
+        <!-- <script src="strechJs.js"></script> -->
+    </body>
+</html>

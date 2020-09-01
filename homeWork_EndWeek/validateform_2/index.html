@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form Registration</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="wrap-all">
+            <div class="title">Job Application Form Widget</div>
+            <div class="wrap-form">
+                <form action="" name="form" id="form">
+                    <div class="name-group">
+                        <input
+                            type="text"
+                            name="first-name"
+                            id="first-name"
+                            placeholder="First name"
+                        />
+
+                        <input
+                            type="text"
+                            name="last-name"
+                            id="last-name"
+                            placeholder="Last name"
+                            style="margin-left: 20px"
+                        />
+                    </div>
+                    <div class="msgErr-group">
+                        <div class="errMsg" id="first-name-err"></div>
+                        <div class="errMsg" id="last-name-err"></div>
+                    </div>
+                    <div class="contact-group">
+                        <input
+                            type="text"
+                            name="email"
+                            id="email"
+                            placeholder="Email"
+                        />
+
+                        <input
+                            type="text"
+                            name="tel"
+                            id="tel"
+                            placeholder="Phone"
+                            style="margin-left: 20px"
+                        />
+                    </div>
+                    <div class="msgErr-group">
+                        <div class="errMsg" id="email-err"></div>
+                        <div class="errMsg" id="tel-err"></div>
+                    </div>
+                    <select name="countries" id="countries">
+                        <option value="" disabled selected hidden>
+                            Select contry
+                        </option>
+                    </select>
+                    <div class="errMsg countries-err"></div>
+                    <input
+                        type="text"
+                        name="city"
+                        id="city"
+                        placeholder="City"
+                    />
+                    <div class="errMsg"></div>
+                    <input
+                        type="text"
+                        name="address"
+                        id="address"
+                        placeholder="Address"
+                    />
+                    <div class="errMsg"></div>
+                    <select name="positions" id="positions">
+                        <option value="" disabled selected hidden>
+                            Choose desired position
+                        </option>
+                    </select>
+                    <div class="errMsg positions-err"></div>
+                    <textarea
+                        name="information"
+                        id="information"
+                        cols="30"
+                        rows="10"
+                        placeholder="Additional info"
+                    ></textarea>
+
+                    <div class="wrap-upload">
+                        <input type="file" />
+                        <div class="place">Add your CV</div>
+                        <button class="btn-upload">Browse</button>
+                    </div>
+                    <div class="subtitle">
+                        Only: pdf / doc Size: lessthan 1Mb
+                    </div>
+                    <div class="group-btn">
+                        <button style="margin-right: 15px" id="reset">
+                            Reset
+                        </button>
+                        <button id="send">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+    <!-- jquery cdn -->
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"
+    ></script>
+    <script src="jquery.js"></script>
+    <!-- <script src="main.js"></script> -->
+</html>
