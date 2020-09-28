@@ -1,4 +1,4 @@
-# Fucking_trainning_FPT
+# trainning_FPT
 ```
   Learn HTML - CSS - JS :)
 ```
